@@ -35,6 +35,11 @@ const HomeScreen = ({ navigation }) => {
         >
         <Text>Làm Form đăng nhập</Text>
       </TouchableOpacity>
+      <TouchableOpacity style={styles.ButtonNext}
+        onPress={() => navigation.navigate("CallApi")}
+        >
+        <Text>Call API</Text>
+      </TouchableOpacity>
     </SafeAreaView>
   );
 };
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "space-around",
     alignItems: "center",
-    marginVertical: dimension.height * 0.2,
+    marginVertical: dimension.height * 0.1,
   },
   ButtonNext: {
     width: dimension.width * 0.7,
